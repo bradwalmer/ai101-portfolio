@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounting & Finance</title>
+  <style>
+    :root {
+      --background: #ffffff;
+      --surface: #f3f4f6;
+      --text: #111827;
+      --muted: #374151;
+      --border: #1f2937;
+      --accent: #0b4f71;
+      --accent-text: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--background);
+    }
+
+    header {
+      background: var(--accent);
+      color: var(--accent-text);
+      padding: 2.5rem 1rem;
+    }
+
+    .container {
+      width: min(100% - 2rem, 900px);
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #f59e0b;
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    main {
+      padding: 2rem 0 3rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 3.25rem);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.75rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .status {
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 2px solid var(--border);
+      padding: 1.5rem 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 2rem 1rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      main {
+        padding-top: 1.5rem;
+      }
+
+      .card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Accounting &amp; Finance</h1>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p>Bachelor’s degrees in Accounting and Finance.</p>
+        <p>Accounting internship experience at Walnut Street Associates.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <ul>
+          <li>Accounting</li>
+          <li>Finance</li>
+          <li>Investment portfolio statement organization</li>
+          <li>Tax-related document preparation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="project">
+      <h2>Project</h2>
+      <div class="card">
+        <h3>Investment Portfolio Statement Organization</h3>
+        <p>
+          Logged monthly statements for different investment portfolios and
+          compiled the statements into partnership folders for tax purposes
+          during an accounting internship at Walnut Street Associates.
+        </p>
+        <p class="status">Status: Completed internship task</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Accounting &amp; Finance</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Historic Philadelphia Tour</title>
+<link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.145/Build/Cesium/Widgets/widgets.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap"><link rel="stylesheet" href="style.css"></head><body>
+<header><p>AI 101 · WEEK 6 · TOUR LAB</p><h1>Historic Philadelphia</h1><p>A virtual tour of three landmarks and the history behind them. Coordinates and facts are listed with their sources.</p></header>
+<main>
+<section aria-label="Tour stop details">
+  <p id="message" role="status">Loading…</p>
+  <p id="count" class="count"></p>
+  <h2 id="name"></h2>
+  <img id="photo" hidden alt="">
+  <p id="nophoto" class="muted" hidden>No photo for this stop yet.</p>
+  <p id="desc"></p>
+  <p id="source" class="muted"></p>
+  <div class="buttons"><button id="prev">◀ Previous</button><button id="next">Next stop ▶</button></div>
+  <div id="problems" class="problems" role="alert"></div>
+  <p><a href="tests.html">Run tour tests</a></p>
+</section>
+<div id="globe" aria-label="Interactive 3D globe showing tour stop markers"></div>
+</main>
+<footer>Grid globe, no satellite imagery or terrain. Stop positions come from places.js. Verify every fact before publishing.</footer>
+<script src="https://cesium.com/downloads/cesiumjs/releases/1.145/Build/Cesium/Cesium.js"></script>
+<script src="places.js"></script><script src="tour-core.js"></script><script src="app.js"></script></body></html>
